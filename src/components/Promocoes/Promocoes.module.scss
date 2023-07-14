@@ -1,0 +1,17 @@
+@import "../../styles/variaveis";
+
+.promocoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  padding: 24px 0;
+  position: relative;
+
+  h2 {
+    color: $branco-padrao;
+    font-family: $font-secundaria;
+    margin-bottom: 55px;
+    font-size: 3rem;
+  }
+}

@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import Promocoes from "components/Promocoes";
 import SecaoPrincipal from "components/SecaoPrincipal";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Header />
       <SecaoPrincipal />
+      <Promocoes />
     </>
   );
 };
