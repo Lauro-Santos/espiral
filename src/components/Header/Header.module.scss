@@ -106,6 +106,10 @@
       flex-wrap: nowrap;
       justify-content: space-around;
       margin-right: 18px;
+
+      i {
+        cursor: pointer;
+      }
     }
   }
 
