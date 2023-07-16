@@ -15,7 +15,7 @@ const Home = () => {
         <SecaoPrincipal />
         <Promocoes />
         <SecaoDestaque urlImage={banner1} text={"Moda Street"} />
-        <SecaoDestaque urlImage={banner2} text={"Destaque do mês"} />
+        <SecaoDestaque urlImage={banner2} text={"Destaque "} span={"do mês"} />
       </main>
       <Rodape />
     </>

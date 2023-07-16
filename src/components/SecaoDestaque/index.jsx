@@ -1,7 +1,7 @@
 import style from "./SecaoDestaque.module.scss";
 import fotoTeste from "assets/images/CASACO 1.png";
 
-const SecaoDestaque = ({ urlImage, text }) => {
+const SecaoDestaque = ({ urlImage, text, span }) => {
   return (
     <section className={style.sacao__destaque}>
       <div
@@ -9,7 +9,7 @@ const SecaoDestaque = ({ urlImage, text }) => {
         style={{ backgroundImage: `url(${urlImage})` }}
       >
         <div className={style.texto__conteiner}>
-          <h3>{text}</h3>
+        {!span ? <h3>{text}</h3> : <h3 className={style.com__span}>{text}<span>{span}</span></h3>}
           <a href="/">Ver Colação</a>
         </div>
       </div>
