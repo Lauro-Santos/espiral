@@ -10,7 +10,7 @@ const SecaoDestaque = ({ urlImage, text, span }) => {
       >
         <div className={style.texto__conteiner}>
         {!span ? <h3>{text}</h3> : <h3 className={style.com__span}>{text}<span>{span}</span></h3>}
-          <a href="/">Ver Colação</a>
+          <a href="/">Ver Coleção</a>
         </div>
       </div>
 
