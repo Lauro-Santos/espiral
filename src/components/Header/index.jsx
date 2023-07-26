@@ -2,6 +2,7 @@ import style from "./Header.module.scss";
 import logo from "assets/icons/Logo.svg";
 import Menu from "./Menu";
 import { useState } from "react";
+import CarrinhoCompra from "components/CarrinhoCompras";
 
 const Header = () => {
   const [menuState, setManuState] = useState(false)
@@ -105,6 +106,7 @@ const Header = () => {
         {menuState && <Menu />}
         
       </div>
+      <CarrinhoCompra />
     </header>
   );
 };
