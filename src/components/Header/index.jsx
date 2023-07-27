@@ -6,10 +6,15 @@ import CarrinhoCompra from "components/CarrinhoCompras";
 
 const Header = () => {
   const [menuState, setManuState] = useState(false)
+  const [bagState, setBagState] = useState(false)
 
   const handClick = () => {
     setManuState(!menuState)
   }
+
+  const handleBagClick = (isOpen) => {
+    setBagState(isOpen);
+  };
 
   return (
     <header className={style.cabecalho}>
@@ -63,7 +68,7 @@ const Header = () => {
               />
             </svg>
           </i>
-          <i className={style.icone} id={style.bag}>
+          <i className={style.icone} id={style.bag} onClick={() => handleBagClick(!bagState)}>
             <svg
               width="22"
               height="22"
@@ -106,9 +111,9 @@ const Header = () => {
         {menuState && <Menu />}
         
       </div>
-      <CarrinhoCompra />
+      {bagState && <CarrinhoCompra bagShow={bagState} updateBagState={handleBagClick}/>}
     </header>
   );
-};
+}
 
 export default Header;

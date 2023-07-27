@@ -1,12 +1,11 @@
-import fotoTeste from "assets/images/CAMISA 1.png"
 import style from "./ItemLista.module.scss"
 
-const ItemLista = () => {
+const ItemLista = ({children, preco, image}) => {
   return (
     <li className={style.item}>
-      <img className={style.imagem} src={fotoTeste} alt="teste" />
-      <p className={style.texto}>Nome do produto</p>
-      <span className={style.preco}>R$ 0,00</span>
+      <img className={style.imagem} src={require(`/src/assets/images/${image}`)} alt="teste" />
+      <p className={style.texto}>{children}</p>
+      <span className={style.preco}>R$ {preco}</span>
       <button className={style.excluir}>
         <i className={style.lixeira}></i>
       </button>
