@@ -1,4 +1,4 @@
-@import "../../styles/variaveis";
+@import "../../../styles/variaveis";
 
 .card {
   height: 290px;
@@ -52,6 +52,9 @@
 
     p {
       color: $branco-padrao;
+      max-width: 90%;
+      text-align: center;
+      white-space: nowrap;
     }
 
     .preco {

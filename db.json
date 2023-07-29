@@ -1,82 +1,84 @@
-[
-  {
-    "id": 1,
-    "nome": "Camisa T-Shirt preta",
-    "preco": 119.0,
-    "info": "96% viscose e 4% elastano",
-    "descricao": "Além de ser extremamente leve e macia, ideal pra qualquer ocasião e estação do ano, a Daily T-Shirt  tem impacto ambiental reduzido: 50% menos uso de água e 50% menos emissões de CO2 na sua produção que uma camiseta de algodão, livre do uso de inseticidas e pesticidas.",
-    "imagem": ""
-  },
-  {
-    "id": 2,
-    "nome": "Jaqueta Corta Vento Broken Rules Capuz Preta",
-    "preco": 94.99,
-    "info": "Possui barra elástica, capuz com ajuste e estrutura corta vento. Acompanha embalagem para transporte. 100% poliéster",
-    "descricao": "A jaqueta esportiva é uma ótima opção para treinos em dias mais frios. Ela é confortável, quente e mantém você seco durante a prática de esportes, aumentando a performance e desempenho para um treino equilibrado e de qualidade! A Broken Rules é uma marca especializada em moda masculina e possui seu foco em produtos de qualidade, diversidade e sofisticação. Atende a todos os guarda-roupas modernos, com peças que vão desde o trabalho ao happy hour.",
-    "imagem": ""
-  },
-  {
-    "id": 3,
-    "nome": "Tênis Nike Air Max",
-    "preco": 720.0,
-    "info": "O couro, o tecido e a tela se combinam em uma construção durável que é ventilada e confortável de usar o dia todo. A entressola de espuma acrescenta amortecimento duradouro. A sola de borracha oferece tração e durabilidade.",
-    "descricao": "A revolucionária tecnologia Air apareceu pela primeira vez nos calçados Nike em 1978. Em 1987, o Air Max 1 estreou com a tecnologia Air visível no seu calcanhar, permitindo que os fãs não só sentissem o amortecimento do Air, mas pudessem vê-lo.",
-    "imagem": ""
-  },
-  {
-    "id": 4,
-    "nome": "Blusão Moletom com ziper Moleton Canguru",
-    "preco": 99.99,
-    "info": "50% Algodão 50% Poliéster",
-    "descricao": "Nosso moletom é de excelente qualidade, com capuz, punho, e bolso canguru. São excelentes para temperaturas mais frias, já que quebram o vento, e te deixam protegido e confortável. Se encaixa perfeitamente no corpo contendo um design moderno.",
-    "imagem": ""
-  },
-  {
-    "id": 5,
-    "nome": "Calça Legging Bravaa Store Fitness Lisa Academia Cintura Alta Telinha 287 Preto",
-    "preco": 39.9,
-    "info": "92% poliéster 8% elastano",
-    "descricao": "Calça com modelagem básica e prática. Perfeita para o frio e para o dia a dia. Tecido super confortável. Cós alto para maior segurança, evita que a peça fique descendo.",
-    "imagem": ""
-  },
-  {
-    "id": 6,
-    "nome": "Jaqueta Masculina Dupla Face - Preto",
-    "preco": 384.9,
-    "info": "Composição: 46% Algodão 43% Poliéster 11% Poliamida / Forro: 100% Poliéste Cor: Preto",
-    "descricao": "A jaqueta preta é confeccionada em tecido leve. A peça de modelo dupla face possui gola padre, mangas longas, bolsos frontais embutidos com fechamento por zíper, forro com enchimento, shape solto, caimento reto, acabamento canelado e fechamento frontal por zíper.",
-    "imagem": ""
-  },
-  {
-    "id": 7,
-    "nome": "Bermuda Saruel Brohood Feminino Moletom Preto",
-    "preco": 98.91,
-    "info": "Feito em moletom 100% algodão de gramatura leve",
-    "descricao": "Bermuda de moletom Brohood no modelo saruel skinny, é uma bermuda de molde justo na panturrilha e largo de gancho.",
-    "imagem": ""
-  },
-  {
-    "id": 8,
-    "nome": "Tênis Skate Old Sch ool Street Unissex",
-    "preco": 189.6,
-    "info": "Lona + Camurça Fechamento: Cadarços Solado: Borracha Natural Vulcanizada Palmilha: Confort Altura do Cano: Baixo",
-    "descricao": "Tênis clássico, tradicional e desejado! Combina com todos os looks. Confeccionado em lona, possui solado em borracha vulcanizada proporcionando conforto e aderência perfeita ao caminhar.",
-    "imagem": ""
-  },
-  {
-    "id": 9,
-    "nome": "Chapéu Adidas Originals Monogram Preto",
-    "preco": 139.99,
-    "info": "100% Poliéster Reciclado",
-    "descricao": "Os chapéus são acessórios atemporais, trazem charme e estilo completando looks que podem ser usados no dia a dia ou nos momentos de lazer. Use e abuse nos dias de verão, eles são ótimos complementos para looks de piscina, praia e viagens!",
-    "imagem": ""
-  },
-  {
-    "id": 10,
-    "nome": "TETRA-LITE™ CARGO HIGH RIB JOGGER - PRETO",
-    "preco": 158.0,
-    "info": "Design leve e técnico com proteção adaptativa contra intempéries e elasticidade em 4 direções",
-    "descricao": "76% nylon 24% elastano",
-    "imagem": ""
-  }
-]
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camisa T-Shirt preta",
+      "preco": 119.0,
+      "info": "96% viscose e 4% elastano",
+      "descricao": "Além de ser extremamente leve e macia, ideal pra qualquer ocasião e estação do ano, a Daily T-Shirt  tem impacto ambiental reduzido: 50% menos uso de água e 50% menos emissões de CO2 na sua produção que uma camiseta de algodão, livre do uso de inseticidas e pesticidas.",
+      "imagem": ""
+    },
+    {
+      "id": 2,
+      "nome": "Jaqueta Corta Vento Broken Rules Capuz Preta",
+      "preco": 94.99,
+      "info": "Possui barra elástica, capuz com ajuste e estrutura corta vento. Acompanha embalagem para transporte. 100% poliéster",
+      "descricao": "A jaqueta esportiva é uma ótima opção para treinos em dias mais frios. Ela é confortável, quente e mantém você seco durante a prática de esportes, aumentando a performance e desempenho para um treino equilibrado e de qualidade! A Broken Rules é uma marca especializada em moda masculina e possui seu foco em produtos de qualidade, diversidade e sofisticação. Atende a todos os guarda-roupas modernos, com peças que vão desde o trabalho ao happy hour.",
+      "imagem": ""
+    },
+    {
+      "id": 3,
+      "nome": "Tênis Nike Air Max",
+      "preco": 720.0,
+      "info": "O couro, o tecido e a tela se combinam em uma construção durável que é ventilada e confortável de usar o dia todo. A entressola de espuma acrescenta amortecimento duradouro. A sola de borracha oferece tração e durabilidade.",
+      "descricao": "A revolucionária tecnologia Air apareceu pela primeira vez nos calçados Nike em 1978. Em 1987, o Air Max 1 estreou com a tecnologia Air visível no seu calcanhar, permitindo que os fãs não só sentissem o amortecimento do Air, mas pudessem vê-lo.",
+      "imagem": ""
+    },
+    {
+      "id": 4,
+      "nome": "Blusão Moletom com ziper Moleton Canguru",
+      "preco": 99.99,
+      "info": "50% Algodão 50% Poliéster",
+      "descricao": "Nosso moletom é de excelente qualidade, com capuz, punho, e bolso canguru. São excelentes para temperaturas mais frias, já que quebram o vento, e te deixam protegido e confortável. Se encaixa perfeitamente no corpo contendo um design moderno.",
+      "imagem": ""
+    },
+    {
+      "id": 5,
+      "nome": "Calça Legging Bravaa Store Fitness Lisa Academia Cintura Alta Telinha 287 Preto",
+      "preco": 39.9,
+      "info": "92% poliéster 8% elastano",
+      "descricao": "Calça com modelagem básica e prática. Perfeita para o frio e para o dia a dia. Tecido super confortável. Cós alto para maior segurança, evita que a peça fique descendo.",
+      "imagem": ""
+    },
+    {
+      "id": 6,
+      "nome": "Jaqueta Masculina Dupla Face - Preto",
+      "preco": 384.9,
+      "info": "Composição: 46% Algodão 43% Poliéster 11% Poliamida / Forro: 100% Poliéste Cor: Preto",
+      "descricao": "A jaqueta preta é confeccionada em tecido leve. A peça de modelo dupla face possui gola padre, mangas longas, bolsos frontais embutidos com fechamento por zíper, forro com enchimento, shape solto, caimento reto, acabamento canelado e fechamento frontal por zíper.",
+      "imagem": ""
+    },
+    {
+      "id": 7,
+      "nome": "Bermuda Saruel Brohood Feminino Moletom Preto",
+      "preco": 98.91,
+      "info": "Feito em moletom 100% algodão de gramatura leve",
+      "descricao": "Bermuda de moletom Brohood no modelo saruel skinny, é uma bermuda de molde justo na panturrilha e largo de gancho.",
+      "imagem": ""
+    },
+    {
+      "id": 8,
+      "nome": "Tênis Skate Old Sch ool Street Unissex",
+      "preco": 189.6,
+      "info": "Lona + Camurça Fechamento: Cadarços Solado: Borracha Natural Vulcanizada Palmilha: Confort Altura do Cano: Baixo",
+      "descricao": "Tênis clássico, tradicional e desejado! Combina com todos os looks. Confeccionado em lona, possui solado em borracha vulcanizada proporcionando conforto e aderência perfeita ao caminhar.",
+      "imagem": ""
+    },
+    {
+      "id": 9,
+      "nome": "Chapéu Adidas Originals Monogram Preto",
+      "preco": 139.99,
+      "info": "100% Poliéster Reciclado",
+      "descricao": "Os chapéus são acessórios atemporais, trazem charme e estilo completando looks que podem ser usados no dia a dia ou nos momentos de lazer. Use e abuse nos dias de verão, eles são ótimos complementos para looks de piscina, praia e viagens!",
+      "imagem": ""
+    },
+    {
+      "id": 10,
+      "nome": "TETRA-LITE™ CARGO HIGH RIB JOGGER - PRETO",
+      "preco": 158.0,
+      "info": "Design leve e técnico com proteção adaptativa contra intempéries e elasticidade em 4 direções",
+      "descricao": "76% nylon 24% elastano",
+      "imagem": ""
+    }
+  ]
+}

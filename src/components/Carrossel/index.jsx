@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 
 import style from "./Carrossel.module.scss";
 import seta from "./Arrow-icon.svg";
-import CardCarrossel from "../CardCarrossel";
+import CardCarrossel from "./CardCarrossel";
 
-const Carrossel = () => {
+const Carrossel = ({ data }) => {
   const carrosel = useRef(null);
 
   const handleLeftClick = (e) => {
@@ -18,9 +18,13 @@ const Carrossel = () => {
   return (
     <>
       <ul className={style.carrossel} ref={carrosel}>
-
-        <CardCarrossel preco="0,00">Nome do produto</CardCarrossel>
-
+        {data.map((produto) => {
+          return (
+            <CardCarrossel key={produto.id} preco={produto.preco} image={produto.imagem}>
+              {produto.nome}
+            </CardCarrossel>
+          );
+        })}
       </ul>
       <div className={style.botoes}>
         <button onClick={handleLeftClick}>
