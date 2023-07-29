@@ -1,6 +1,5 @@
 import CardDestque from "./CardDestaque";
 import style from "./SecaoDestaque.module.scss";
-import fotoTeste from "assets/images/CASACO 1.png";
 
 const SecaoDestaque = ({ urlBanner, text, span, data }) => {
   return (
