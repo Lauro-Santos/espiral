@@ -8,7 +8,6 @@ const CarrinhoCompra = ({ bagShow, updateBagState }) => {
   const handleClick = () => {
     setIsOpen(false);
     updateBagState(false);
-    console.log("isOpen", isOpen);
   };
 
   return (
@@ -22,7 +21,7 @@ const CarrinhoCompra = ({ bagShow, updateBagState }) => {
       </header>
       <main className={style.main__bag}>
         <ul className={style.lista__itens}>
-          <ItemLista image="CAMISA 1.png" preco="0,00">
+          <ItemLista image={"camisa.png"} preco="0,00">
             Nome do produto
           </ItemLista>
         </ul>
