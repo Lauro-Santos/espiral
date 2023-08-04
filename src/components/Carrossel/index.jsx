@@ -9,11 +9,11 @@ const Carrossel = ({ data }) => {
 
   const handleLeftClick = (e) => {
     e.preventDefault();
-    carrosel.current.scrollLeft -= carrosel.current.offsetWidth;
+    carrosel.current.scrollLeft -= (carrosel.current.offsetWidth - 70);
   };
   const handleRigthClick = (e) => {
     e.preventDefault();
-    carrosel.current.scrollLeft += carrosel.current.offsetWidth;
+    carrosel.current.scrollLeft += (carrosel.current.offsetWidth - 70);
   };
   return (
     <>
