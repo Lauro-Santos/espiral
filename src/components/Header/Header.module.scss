@@ -3,7 +3,7 @@
 .cabecalho {
   position: fixed;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   height: 65px;
   width: 100vw;
@@ -15,7 +15,7 @@
   .logo {
     display: flex;
     align-items: center;
-    padding-left: 55px;
+    padding-left: 18px;
     gap: 8px;
     user-select: none;
 
@@ -33,7 +33,7 @@
   }
 
   .links__cabecalho {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: end;
     padding-right: 50px;
@@ -53,10 +53,23 @@
 
   .utilitarios {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    // grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
 
     .conteiner__pesquisa {
+      background-color: $branco-padrao;
+      position: absolute;
+      left: 0;
+      width: 100vw;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 100%;
+      box-shadow: 0px 6px 16px 4px rgba(0, 0, 0, 0.25);
+      z-index: 1000;
+
       .barra__pesquisa {
         display: flex;
         align-items: center;
@@ -65,7 +78,8 @@
         background-color: $cor-principal;
         overflow: hidden;
         border-radius: 50px;
-        width: 95%;
+        // width: 95%;
+        width: 80%;
 
         span {
           padding: 0 7px;
@@ -94,8 +108,8 @@
           border: none;
           background-color: $salmao;
           cursor: pointer;
-          transition: background-color .2s ease;
-          
+          transition: background-color 0.2s ease;
+
           &:hover {
             background-color: $laranja;
           }
@@ -105,10 +119,16 @@
 
     .conteiner__user__bag__menu {
       display: flex;
+      justify-self: end;
       align-items: center;
       flex-wrap: nowrap;
-      justify-content: space-around;
       margin-right: 18px;
+      justify-content: end;
+      gap: 24px;
+
+      #menu {
+        margin-left: calc(45px - 24px);
+      }
 
       i {
         cursor: pointer;
@@ -116,7 +136,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     grid-template-columns: 0.5fr 1fr;
 
     .logo {
@@ -128,37 +148,51 @@
     }
 
     .utilitarios {
-      gap: 76px;
+      gap: 32px;
+      display: flex;
+      justify-content: end;
+
+      .conteiner__pesquisa {
+        background: none;
+        position: static;
+        width: auto;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        box-shadow: none;
+
+        .barra__pesquisa {
+          width: 95%;
+        }
+      }
 
       .conteiner__user__bag__menu {
-        margin-right: 0;
+        margin-right: 17px;
       }
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (min-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+    
+    .logo {
+      padding-left: 55px;
+    }
+
+    .links__cabecalho {
+      display: flex;
+    }
+
     .utilitarios {
       grid-template-columns: 1fr;
       .conteiner__pesquisa {
-        background-color: $branco-padrao;
-        position: absolute;
-        left: 0;
-        width: 100vw;
-        padding: 10px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 100%;
-        box-shadow: 0px 6px 16px 4px rgba(0, 0, 0, 0.25);
-        z-index: 1000;
-
         .barra__pesquisa {
           width: 80%;
         }
       }
 
       .conteiner__user__bag__menu {
-        justify-content: end;
+        justify-content: space-around;
         padding-right: 18px;
         gap: 24px;
 
