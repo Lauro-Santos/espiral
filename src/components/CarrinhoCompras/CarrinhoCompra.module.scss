@@ -4,12 +4,11 @@
   position: absolute;
   right: 0;
   transition: right 0.3s ease-in-out;
-  top: 100%;
+  top: 177%;
   background-color: $cor-principal;
-  width: 500px;
-  height: calc(100vh - 68px);
+  width: 100vw;
+  height: calc(100vh - 118px);
   border-top: 4px solid $salmao;
-  border-radius: 15px 0 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,6 +110,27 @@
       color: $branco-padrao;
       font-size: 1.1rem;
       box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.473);
+      cursor: pointer;
+
+      &:hover {
+        background-color: $laranja;
+      }
+
+      &:active {
+        color: $cor-de-caixa;
+      }
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 100%;
+    width: 60vw;
+    height: calc(100vh - 68px);
+    border-radius: 15px 0 0 15px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    width: 34vw;
+    height: calc(100vh - 65px);
   }
 }
