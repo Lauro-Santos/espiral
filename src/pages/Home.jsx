@@ -35,6 +35,7 @@ const Home = () => {
             text={banner.texto}
             span={banner.span}
             data={produtos}
+            limit={8}
           />
         );
       })}
