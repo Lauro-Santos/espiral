@@ -7,8 +7,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding-left: 120px;
+  padding-left: 0;
 
   .modelo {
     position: absolute;
@@ -20,73 +21,75 @@
   .texto__conteiner {
     display: flex;
     flex-direction: column;
-    gap: 55px;
+    align-items: center;
+    gap: 24px;
     z-index: 10;
 
     .titulo {
       display: flex;
       flex-direction: column;
       font-family: $font-secundaria;
-      font-size: 3.75rem;
+      font-size: 2.5rem;
       color: $branco-padrao;
       font-weight: 700;
-    
+      align-items: center;
+
       span {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 400;
       }
     }
 
     p {
-        color: $branco-padrao;
-        font-size: 1.25rem;
+      color: $branco-padrao;
+      font-size: 1.25rem;
 
-        span {
-            font-weight: 700;
-        }
+      span {
+        font-weight: 700;
+      }
     }
 
     a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        background-color: $cor-principal;
-        color: $laranja;
-        width: 250px;
-        text-align: center;
-        padding: 15px 0;
-        border-radius: 15px;
-        box-shadow: 15px 13px 15px -3px rgba(0, 0, 0, 0.80);
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: $cor-principal;
+      color: $laranja;
+      width: 250px;
+      text-align: center;
+      padding: 15px 0;
+      border-radius: 15px;
+      box-shadow: 15px 13px 15px -3px rgba(0, 0, 0, 0.8);
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-left: 55px;
     justify-content: end;
     .modelo {
-        right: 10%;
+      right: 10%;
     }
 
     .texto__conteiner {
-        margin-bottom: 55px;
+      margin-bottom: 55px;
     }
   }
 
-  @media screen and (max-width: 390px) {
-    padding-left: 0;
-    align-items: center;
+  @media screen and (min-width: 1300px) {
+    padding-left: 120px;
+    align-items: start;
 
     .texto__conteiner {
-        align-items: center;
-        gap: 24px;
+      align-items: start;
+      gap: 55px;
 
-        .titulo {
-            align-items: center;
-            font-size: 2.5rem;
+      .titulo {
+        align-items: start;
+        font-size: 3.75rem;
 
-            span {
-                font-size: 2rem;
-            }
+        span {
+          font-size: 2.5rem;
         }
+      }
     }
   }
 }
