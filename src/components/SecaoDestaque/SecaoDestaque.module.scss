@@ -50,6 +50,11 @@
         border-radius: 15px;
         box-shadow: 15px 13px 15px -3px rgba(0, 0, 0, 0.8);
         margin-bottom: 55px;
+
+        &:hover {
+          background-color: $cor-de-fundo;
+          color: $salmao;
+        }
       }
     }
   }
