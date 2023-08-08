@@ -1,41 +1,44 @@
 @import "../../styles/variaveis";
 
-.carrossel {
+.carrosel__conteiner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  .carrossel {
     overflow-x: auto;
     scroll-behavior: smooth;
-    width: 100%;
-    padding: 55px 0;
+    padding: 55px 20px;
     display: flex;
     list-style: none;
     margin: 0;
 
     &::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
+  }
 
-}
-
-.botoes {
+  .btn__left,
+  .btn__rigth {
+    margin: 0 10px;
+    background-color: $cor-de-caixa;
+    padding: 13px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
     position: absolute;
-    left: 0;
-    top: 60%;
-    width: 100%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    
-    button {
-        margin: 0 10px;
-        background-color: $cor-de-caixa;
-        padding: 13px;
-        border: none;
-        border-radius: 15px;
-        cursor: pointer;
-    }
+    top: 100%;
 
-    @media screen and (max-width: 768px) {
-        top: 100%;
-        justify-content: center;
-        gap: 100px;
+    @media screen and (min-width: 768px) {
+      position: static;
     }
+  }
+
+  .btn__left {
+    left: 10%;
+  }
+  .btn__rigth {
+    right: 10%;
+  }
 }
