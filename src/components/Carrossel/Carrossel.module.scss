@@ -22,13 +22,17 @@
   .btn__left,
   .btn__rigth {
     margin: 0 10px;
-    background-color: $cor-de-caixa;
+    background-color: rgba(87, 87, 87, 0.418);
     padding: 13px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     position: absolute;
     top: 100%;
+
+    &:hover {
+      background-color: $cor-de-caixa;
+    }
 
     @media screen and (min-width: 768px) {
       position: static;
