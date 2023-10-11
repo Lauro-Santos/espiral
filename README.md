@@ -1,7 +1,7 @@
 #   Espiral
 Este é um projeto front-end para uma loja de roupas fictícia. O objetivo deste projeto é demonstrar habilidades Na criação de uma página web interativa, responsiva, intuitiva e atraente para uma loja de roupas online.
 
-![imagem de projeto]()
+![imagem de projeto](https://lauro-santos.vercel.app/static/media/imagem-projeto-loja-de-roupas.258c815d1e6722fb3d5e.png)
 
 ##  Pré-requisitos
 Para visualizar o projeto é necessário um navegador web moderno que suporte HTML5, CSS3 e JavaScript.
